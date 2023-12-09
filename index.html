@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>FlappyBird</title>
+
+	<script src="libraries/p5.js"></script>
+	<script src="libraries/p5.dom.js"></script>
+	<script src="libraries/p5.sound.js"></script>
+	<script src="sketch.js"></script>
+	<script src="pipe.js"></script>
+	<script src="player.js"></script>
+
+	<style>
+		body {
+			margin:0;
+			padding:0;
+			overflow: hidden;
+		}
+		canvas {
+	    margin: auto;
+	    display: block;
+ 			background-image: url("images/back.png");
+		}
+		h1 {
+			font-size: 30px;
+		}
+		#s {
+			float: left;
+		}
+		#score {
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+		#highscore {
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+		#hs {
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="s"> Score: <span id="score">0</span></h1>
+	<h1 id="hs"> Highscore: <span id="highscore">0</span></h1>
+</body>
+</html>
